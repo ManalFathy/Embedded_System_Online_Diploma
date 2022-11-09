@@ -1,0 +1,5 @@
+1 manal fathy 5.5 1 2 3 4 5
+2 ahmed mohamed 3.0 2 4 7 8 9
+2 mai ahmed 5 6 7 8 9 0
+3 manal ahmed 4 10 20 30 40 50
+4 mary ayman 6 1 2 3 4 10 
