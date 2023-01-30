@@ -1,0 +1,4 @@
+main.c:39:6:clock_init	4	static
+main.c:46:6:SPI1_IRQ_Callback	16	static
+main.c:60:6:M_UART_IRQ_Callback	4	static
+main.c:74:5:main	48	static
