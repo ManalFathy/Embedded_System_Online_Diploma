@@ -1,0 +1,36 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer send_timer ;
+  const int timerPeriod = 1000 ;
+  message ACC_CMD_message ACC_CMD ;
+  int variable_ACC = 0 ;
+}
+
+on start
+{
+  write ("Eng : Manal CAN case study 5");
+  setTimer (send_timer , timerPeriod) ;
+  
+}
+
+on message Speed_Val_mressage
+{
+  write ("ECU1 : Receive from ECU2");
+}
+
+on timer send_timer
+{
+   write ("Eng : Manal CAN case study 5");
+ // variable_ACC ^= 1 ;
+     variable_ACC = @sysvar::ACC_System_VAL ;
+   ACC_CMD.ACC_ON.phys = variable_ACC ;
+   output(ACC_CMD);
+  setTimer (send_timer , timerPeriod) ;
+  
+}
